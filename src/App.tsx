@@ -1,7 +1,9 @@
-function App() {
+import Home from "./pages/home/home";
+
+const App = () => {
   return (
     <div className="App">
-      This is React
+      <Home />
     </div>
   );
 }
