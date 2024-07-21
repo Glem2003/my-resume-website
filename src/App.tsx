@@ -1,9 +1,9 @@
-import Home from "./pages/home/home";
+import AppRoute from "./routes";
 
 const App = () => {
   return (
     <div className="App">
-      <Home />
+      <AppRoute />
     </div>
   );
 }
