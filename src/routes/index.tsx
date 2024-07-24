@@ -16,7 +16,7 @@ const routes = [
 
 const AppRoute = () => {
     return (
-        <BrowserRouter basename="/Glem2003/my-website">
+        <BrowserRouter basename="/my-website">
             <Suspense fallback={<></>}>
                 <Routes>
                     {routes.map(({ path, element, index }) => (
