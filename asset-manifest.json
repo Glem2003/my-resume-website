@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my-website/static/css/main.026d7d53.css",
-    "main.js": "/my-website/static/js/main.253ce3d7.js",
+    "main.js": "/my-website/static/js/main.d3a27464.js",
     "static/js/453.195b869a.chunk.js": "/my-website/static/js/453.195b869a.chunk.js",
     "static/css/619.6fe1aa8a.chunk.css": "/my-website/static/css/619.6fe1aa8a.chunk.css",
     "static/js/619.3eb13ea7.chunk.js": "/my-website/static/js/619.3eb13ea7.chunk.js",
@@ -14,7 +14,7 @@
     "static/media/Electronic-business-platform-Demo.png": "/my-website/static/media/Electronic-business-platform-Demo.b8a066a2e5718234236b.png",
     "index.html": "/my-website/index.html",
     "main.026d7d53.css.map": "/my-website/static/css/main.026d7d53.css.map",
-    "main.253ce3d7.js.map": "/my-website/static/js/main.253ce3d7.js.map",
+    "main.d3a27464.js.map": "/my-website/static/js/main.d3a27464.js.map",
     "453.195b869a.chunk.js.map": "/my-website/static/js/453.195b869a.chunk.js.map",
     "619.6fe1aa8a.chunk.css.map": "/my-website/static/css/619.6fe1aa8a.chunk.css.map",
     "619.3eb13ea7.chunk.js.map": "/my-website/static/js/619.3eb13ea7.chunk.js.map",
@@ -27,6 +27,6 @@
   },
   "entrypoints": [
     "static/css/main.026d7d53.css",
-    "static/js/main.253ce3d7.js"
+    "static/js/main.d3a27464.js"
   ]
 }
