@@ -1,0 +1,15 @@
+.resume
+    display: grid
+    grid-template-columns: 200px 1fr
+    grid-template-areas: 'head head' 'slide main' 'slide main'
+
+    &__head
+        grid-area: head
+        margin-bottom: 30px
+
+    &__slide
+        grid-area: slide
+        height: 400px
+
+    &__main
+        grid-area: main

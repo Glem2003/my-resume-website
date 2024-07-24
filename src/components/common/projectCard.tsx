@@ -37,7 +37,7 @@ const ProjectCard: React.FC<projectCardProps> = (props) => {
 
             <h6 className={style.date}>{`${firstData} - ${lastData}`}</h6>
 
-            <a href={projectLink} target="_blank" className={style.linkBox}>
+            <a href={projectLink} target={"_blank"} rel="noopener noreferrer" className={style.linkBox}>
                 <h4 className={style.link}>
                     {projectName}
                     <span className={style.icon}>
