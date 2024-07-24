@@ -1,0 +1,22 @@
+@import '../../assets/styles/variable.sass'
+    
+.footer
+    padding: 15px 0
+    *
+        //border: 1px solid #000
+
+    &__list
+        display: flex
+        justify-content: center
+        gap: 50px
+        margin-bottom: 30px
+
+    &__copyright
+        text-align: center
+
+@media screen and (max-width: 570px)
+    .footer
+        &__list
+            flex-direction: column
+            gap: 10px
+            text-align: center
