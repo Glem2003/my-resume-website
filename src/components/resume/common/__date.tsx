@@ -1,9 +1,16 @@
 //style
 import style from './style/__date.module.sass'
 
-const DateText = () =>{
-    return(
-        <p className={style.date}>date</p>
+interface dateProps {
+    date: string
+}
+
+const DateText: React.FC<dateProps> = (props) => {
+
+    const { date } = props
+
+    return (
+        <p className={style.date}>{date}</p>
     )
 }
 

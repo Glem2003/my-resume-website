@@ -23,29 +23,38 @@ const AboutPage = () => {
         buttonItems
     } = aboutContent
 
+    const btnClick = () => {
+        alert('coming soon')
+    }
+
     return (
         <DefaultPages>
 
-            <section className='about__head'>
+            <section className='about'>
                 <Title title={headerTitle} />
                 <TextInfo
                     title={headerDescription}
                     description={textInfo}
                 />
                 <div className="about__buttonItems">
-                    <Button
-                        name={buttonItems[0]}
-                        icon={<MdArrowOutward />}
-                        backgroundColor='black'
-                        color='white'
-                    />
+
+                    <a href='mailto:glem920813@gmail.com'>
+                        <Button
+                            name={buttonItems[0]}
+                            icon={<MdArrowOutward />}
+                            backgroundColor='black'
+                            color='white'
+                        />
+                    </a>
+
                     <Button
                         name={buttonItems[1]}
                         icon={<IoMdDownload />}
                         backgroundColor='white'
                         color='black'
-                        disabled
+                        btnClick={btnClick}
                     />
+                    
                 </div>
             </section>
 

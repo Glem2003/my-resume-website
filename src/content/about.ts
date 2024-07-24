@@ -7,8 +7,8 @@ interface aboutContentProps {
 
 const aboutContent: aboutContentProps = {
     headerTitle: 'Hi!',
-    headerDescription: 'I\'m Glem,I live in Taiwan',
-    textInfo: 'I am a front-end web developer, primarily focused on developing websites using React. As a beginner, I am dedicated to optimizing user interfaces and user experiences. I possess a solid technical foundation and strive to deliver excellence in every project.',
+    headerDescription: 'I\'m JIANG,JIA-RUEI,I live in Taiwan',
+    textInfo: 'My English name is Glem and I am a front-end web developer primarily focused on building websites using React. As a beginner, I am dedicated to optimizing user interfaces and user experiences. I possess a solid technical foundation and strive for excellence in every project.',
     buttonItems: ['Contact me', 'Download CV']
 }
 

@@ -1,14 +1,31 @@
+//style
+import "./style/experience.sass"
+
 //component
 import ContentText from "./common/__content"
 import DateText from "./common/__date"
 import TitleText from "./common/__title"
 
-const ExperienceCard = () => {
+interface experienceProps {
+    firstDate: string
+    lastDate?: string
+    title: string
+    content: string | string[]
+}
+
+const ExperienceCard: React.FC<experienceProps> = (props) => {
+
+    const { lastDate, firstDate, title, content } = props
+
+    const date = lastDate ? `${firstDate} - ${lastDate}` : `${firstDate}`
+
     return (
-        <div className="resume__experience">
-            <DateText />
-            <TitleText />
-            <ContentText />
+        <div className="experience">
+            <div className="experience__head">
+                <DateText date={date} />
+                <TitleText title={title} />
+            </div>
+            <ContentText content={content} />
         </div>
     )
 }

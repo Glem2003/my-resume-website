@@ -7,17 +7,22 @@ interface buttonProps {
     disabled?: boolean
     backgroundColor?: string
     color?: string
+    btnClick?: () => void
 }
 
 const Button: React.FC<buttonProps> = (props) => {
 
-    const { name, icon, disabled, backgroundColor, color } = props
+    const { name, icon, disabled, backgroundColor, color, btnClick } = props
 
     return (
         <button
-            style={{ backgroundColor: backgroundColor, color: color }}
+            style={{
+                backgroundColor: backgroundColor,
+                color: color
+            }}
             className={style.button}
             disabled={disabled}
+            onClick={btnClick}
         >
             <p>{name}</p>
             <span className={style.icon}>{icon}</span>

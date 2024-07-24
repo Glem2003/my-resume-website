@@ -1,9 +1,16 @@
 //style
 import style from './style/__title.module.sass'
 
-const TitleText = () => {
-    return(
-        <h3 className={style.title}>Title</h3>
+interface titleTextProps {
+    title: string
+}
+
+const TitleText: React.FC<titleTextProps> = (props) => {
+
+    const { title } = props
+
+    return (
+        <h3 className={style.title}>{title}</h3>
     )
 }
 

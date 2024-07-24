@@ -1,4 +1,8 @@
+//content
+import { footerContent } from "../content/index";
+
 //component
+import Footer from "./footer/footer";
 import Header from "./header/header";
 
 interface defaultPagesProps {
@@ -7,6 +11,7 @@ interface defaultPagesProps {
 
 const DefaultPages: React.FC<defaultPagesProps> = (props) => {
 
+    const { copyright } = footerContent
     const { children } = props
 
     const navItems = [
@@ -30,6 +35,9 @@ const DefaultPages: React.FC<defaultPagesProps> = (props) => {
                 lists={navItems}
             />
             {children}
+            <Footer
+                copyright={copyright}
+            />
         </>
     )
 }

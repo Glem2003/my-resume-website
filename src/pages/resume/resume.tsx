@@ -1,7 +1,8 @@
-import React from 'react';
-
 //style
 import './style/resume.sass'
+
+//hook
+import useActive from '../../hook/useActive';
 
 //content
 import { resumeContent } from "../../content/index";
@@ -11,20 +12,16 @@ import DefaultPages from "../../components/defaultPages";
 import Title from "../../components/common/title";
 import List from '../../components/resume/list';
 import ExperienceCard from '../../components/resume/experience';
+import ToolsOfChoice from '../../components/resume/toolsOfChoice';
+import Education from '../../components/resume/education';
+import Hobbies from '../../components/resume/hobbies';
 
 const ResumePage = () => {
 
     //take content
-    const {
-        webTitle,
-        list
-    } = resumeContent
+    const { webTitle, list, experience, toolsInfo, education, hobbies } = resumeContent
 
-    const [active, setActive] = React.useState<string>('experience');
-
-    const handleClick = (id: string) => {
-        setActive(id)
-    }
+    const { active, handleClick } = useActive()
 
     return (
         <DefaultPages>
@@ -49,8 +46,34 @@ const ResumePage = () => {
 
                 <main className="resume__main">
 
-                    {active === 'experience' && <ExperienceCard />}
-                    
+                    {active === 'experience' && experience.map((item, index) => (
+                        <ExperienceCard
+                            key={index}
+                            {...item}
+                        />
+                    ))}
+
+                    {active === 'tools of choice' && toolsInfo.map((item, index) => (
+                        <ToolsOfChoice
+                            key={index}
+                            {...item}
+                        />
+                    ))}
+
+                    {active === 'education' && education.map((item, index) => (
+                        <Education
+                            key={index}
+                            {...item}
+                        />
+                    ))}
+
+                    {active === 'hobbies' && hobbies.map((item, index) => (
+                        <Hobbies
+                            key={index}
+                            {...item}
+                        />
+                    ))}
+
                 </main>
 
             </div>
