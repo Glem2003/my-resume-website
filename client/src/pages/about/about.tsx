@@ -54,7 +54,6 @@ const AboutPage = () => {
                         color='black'
                         btnClick={btnClick}
                     />
-                    
                 </div>
             </section>
 
