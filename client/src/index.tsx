@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import reportWebVitals from './reportWebVitals';
-
 import App from './App';
+import './i18n';
 
 //style
 import './assets/styles/root.sass';
@@ -15,5 +14,3 @@ root.render(
     <App />
   </React.StrictMode>
 );
-
-reportWebVitals();

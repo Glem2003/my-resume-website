@@ -2,24 +2,22 @@
 import './style/resume.sass'
 
 //hook
+import { useTranslation } from 'react-i18next';
 import useActive from '../../hook/useActive';
 
-//content
-import { resumeContent } from "../../content/index";
-
 //component
-import DefaultPages from "../../components/defaultPages";
-import Title from "../../components/common/title";
-import List from '../../components/resume/list';
-import ExperienceCard from '../../components/resume/experience';
-import ToolsOfChoice from '../../components/resume/toolsOfChoice';
-import Education from '../../components/resume/education';
-import Hobbies from '../../components/resume/hobbies';
+import { DefaultPages, Title, List, ExperienceCard, ToolsOfChoice, Education, Hobbies } from '../../components/index';
 
 const ResumePage = () => {
 
-    //take content
-    const { webTitle, list, experience, toolsInfo, education, hobbies } = resumeContent
+    const { t } = useTranslation()
+
+    // Take content
+    const list: any[] = t('resume.list', { returnObjects: true }) as any[];
+    const experience: any[] = t('resume.experience', { returnObjects: true }) as any[];
+    const toolsInfo: any[] = t('resume.toolsOfChoice', { returnObjects: true }) as any[];
+    const education: any[] = t('resume.education', { returnObjects: true }) as any[];
+    const hobbies: any[] = t('resume.hobbies', { returnObjects: true }) as any[];
 
     const { active, handleClick } = useActive()
 
@@ -29,7 +27,7 @@ const ResumePage = () => {
             <div className="resume">
 
                 <section className="resume__head">
-                    <Title title={webTitle} />
+                    <Title title={t('resume.webTitle')} />
                 </section>
 
                 <div className="resume__slide">
@@ -53,7 +51,7 @@ const ResumePage = () => {
                         />
                     ))}
 
-                    {active === 'tools of choice' && toolsInfo.map((item, index) => (
+                    {active === 'toolsOfChoice' && toolsInfo.map((item, index) => (
                         <ToolsOfChoice
                             key={index}
                             {...item}

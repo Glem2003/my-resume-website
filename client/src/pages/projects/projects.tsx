@@ -1,21 +1,25 @@
 //style
 import './style/project.sass';
 
+//hook
+import { useTranslation } from 'react-i18next';
+
 //content
 import { projectContent } from "../../content/index";
 
 //component
-import DefaultPages from "../../components/defaultPages";
-import Title from "../../components/common/title";
-import ProjectCard from "../../components/common/projectCard";
+import { DefaultPages, Title, ProjectCard } from "../../components/index";
 
 const ProjectsPage = () => {
+
+    const { t } = useTranslation();
+
     return (
         <DefaultPages>
 
             <>
                 <section>
-                    <Title title={'Projects'} />
+                    <Title title={t('project.title')} />
                 </section>
 
                 <main className="projectItems">

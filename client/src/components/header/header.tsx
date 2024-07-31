@@ -5,12 +5,14 @@ import './header.sass';
 
 export interface headerProps {
     lists?: { to: string, text: string }[]
+    headerMenuIcon?: React.ReactNode
 }
 
 const Header: React.FC<headerProps> = (props) => {
 
     const {
         lists,
+        headerMenuIcon
     } = props
 
     return (
@@ -26,6 +28,10 @@ const Header: React.FC<headerProps> = (props) => {
                     </li>
                 ))}
             </ul>
+
+            <div className='header__mobileMenu'>
+                {headerMenuIcon}
+            </div>
 
         </header>
     );

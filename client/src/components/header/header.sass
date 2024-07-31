@@ -1,5 +1,5 @@
 @import '../../assets/styles/variable.sass'
-    
+
 .header
     display: flex
     align-items: center
@@ -9,15 +9,39 @@
     &__menu
         display: flex
         gap: 20px
-        background-color: #fff
+        background-color: $secondaryColor
+        color: white
+        font-weight: 550
         padding: 10px 15px
         border-radius: 20px
-        box-shadow: 0px 5px 20px rgba(0,0,0,0.5)
+        box-shadow: 0px 5px 20px $secondaryColor
 
     &__list
-        font-size: 1rem
+        font-size: 1em
         cursor: pointer
         opacity: 0.6
         transition: all .3s
+        position: relative
         &:hover
             opacity: 1
+
+    //----------------------
+    &__mobileMenu
+        position: absolute
+        right: 1.5em
+        top: 1.5em
+        display: none
+        @include width(40px)
+        border-radius: 50%
+        cursor: pointer
+        color: $secondaryColor
+
+@media screen and (max-width: 550px)
+    .header
+        justify-content: center
+
+        &__mobileMenu
+            display: block
+
+        &__menu
+            display: none
