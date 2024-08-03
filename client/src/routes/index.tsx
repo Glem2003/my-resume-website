@@ -1,19 +1,22 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
-import React, { lazy, Suspense } from 'react'
+import { lazy, Suspense } from 'react'
 
-import Loading from "../components/common/loading"
+//components
+import { Loading, NotFound } from "../components/common"
 
 //Lazy load
 const About = lazy(() => import("../pages/about/about"))
 const Resume = lazy(() => import("../pages/resume/resume"))
 const Projects = lazy(() => import("../pages/projects/projects"))
+const Login = lazy(() => import("../pages/login/login"))
 
 //Routes Config
 const routes = [
     { path: '/', element: <About />, index: true },
     { path: '/Resume', element: <Resume /> },
     { path: '/Projects', element: <Projects /> },
-    { path: "*", element: <About /> }
+    { path: '/Login', element: <Login /> },
+    { path: "*", element: <NotFound /> }
 ]
 
 const AppRoute = () => {

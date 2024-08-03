@@ -4,43 +4,32 @@ import './style/about.sass';
 //icon
 import { MdArrowOutward, IoMdDownload } from '../../assets/icon/index';
 
-//content
-import { aboutContent } from "../../content/index";
+//hook
+import { useTranslation } from 'react-i18next';
 
 //component
-import DefaultPages from "../../components/defaultPages";
-import Title from "../../components/common/title";
-import Button from "../../components/common/button";
-import TextInfo from '../../components/common/textInfo';
+import { DefaultPages, Title, Button, TextInfo } from '../../components/index';
 
 const AboutPage = () => {
 
-    //take content
-    const {
-        headerTitle,
-        headerDescription,
-        textInfo,
-        buttonItems
-    } = aboutContent
-
-    const btnClick = () => {
-        alert('coming soon')
-    }
+    const { t } = useTranslation();
 
     return (
         <DefaultPages>
 
             <section className='about'>
-                <Title title={headerTitle} />
+
+                <Title title={t('about.headerTitle')} />
                 <TextInfo
-                    title={headerDescription}
-                    description={textInfo}
+                    title={t('about.headerDescription')}
+                    description={t('about.textInfo')}
                 />
+
                 <div className="about__buttonItems">
 
                     <a href='mailto:glem920813@gmail.com'>
                         <Button
-                            name={buttonItems[0]}
+                            name={t('about.buttonItems.0')}
                             icon={<MdArrowOutward />}
                             backgroundColor='black'
                             color='white'
@@ -48,15 +37,16 @@ const AboutPage = () => {
                     </a>
 
                     <Button
-                        name={buttonItems[1]}
+                        name={t('about.buttonItems.1')}
                         icon={<IoMdDownload />}
                         backgroundColor='white'
                         color='black'
-                        btnClick={btnClick}
+                        disabled
                     />
-                </div>
-            </section>
 
+                </div>
+
+            </section>
         </DefaultPages>
     )
 }

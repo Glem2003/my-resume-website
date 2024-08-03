@@ -18,7 +18,8 @@ const Button: React.FC<buttonProps> = (props) => {
         <button
             style={{
                 backgroundColor: backgroundColor,
-                color: color
+                color: color,
+                cursor: disabled ? 'not-allowed' : 'pointer'
             }}
             className={style.button}
             disabled={disabled}

@@ -7,8 +7,15 @@
 
 //body styles
 body
+    font-size: 16px
     height: 100vh
     background: linear-gradient(90deg, #f5f7f8 0%, #f4ce14 65%, #f5f7f8 100%)
+    
+    @media screen and (max-width: 768px)
+        font-size: 14px
+
+    @media screen and (max-width: 425px)
+        font-size: 12px
 
 .App
     width: 80%
@@ -16,17 +23,17 @@ body
 
 //text styles
 h1
-    font-size: 3rem
+    font-size: 3em
 h2
-    font-size: 2rem
+    font-size: 2em
 h3
-    font-size: 1.5rem
+    font-size: 1.5em
 h4
-    font-size: 1.2rem
+    font-size: 1.2em
 h5
-    font-size: 1rem
+    font-size: 1em
 h6
-    font-size: 0.9rem
+    font-size: 0.9em
 
 //list styles
 li
