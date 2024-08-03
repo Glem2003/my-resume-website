@@ -21,15 +21,15 @@ const DefaultPages: React.FC<defaultPagesProps> = (props) => {
     const navItems = [
         {
             to: '/',
-            text: 'About'
+            text: t('header.list.0')
         },
         {
-            to: '/Resume',
-            text: 'Resume'
+            to: '/resume',
+            text: t('header.list.1')
         },
         {
-            to: '/Projects',
-            text: 'Projects'
+            to: '/projects',
+            text: t('header.list.2')
         }
     ]
 

@@ -21,10 +21,3 @@ On the [Projects](projects) page, you will find a showcase of various projects I
 If you are interested in my work or have any collaboration opportunities, feel free to contact me via [email](mailto:glem920813@gmail.com).
 
 Thank you for visiting, and I hope you find useful information here and grow together with me!
-
-# Release Notes
-**Version: 0.8.0**
-
-1. Added About, Resume, and Projects pages
-2. Added website icons
-3. Added version annotation text

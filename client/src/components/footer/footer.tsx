@@ -17,8 +17,8 @@ const Footer: React.FC<footerProps> = (props) => {
         <footer className='footer'>
 
             <p className='footer__copyright'>{copyright}</p>
-            <p className='footer__version'>version {version}</p>
-
+            <p className='footer__version'>{version}</p>
+            
         </footer>
     );
 };

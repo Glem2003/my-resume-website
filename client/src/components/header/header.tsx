@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 
 //style
 import './header.sass';
+import LanguageSwitcher from './LanguageSwitcher';
 
 export interface headerProps {
     lists?: { to: string, text: string }[]
@@ -28,6 +29,8 @@ const Header: React.FC<headerProps> = (props) => {
                     </li>
                 ))}
             </ul>
+
+            <LanguageSwitcher />
 
             <div className='header__mobileMenu'>
                 {headerMenuIcon}

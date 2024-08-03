@@ -14,10 +14,6 @@ const AboutPage = () => {
 
     const { t } = useTranslation();
 
-    const btnClick = () => {
-        alert('coming soon')
-    }
-
     return (
         <DefaultPages>
 
@@ -45,7 +41,7 @@ const AboutPage = () => {
                         icon={<IoMdDownload />}
                         backgroundColor='white'
                         color='black'
-                        btnClick={btnClick}
+                        disabled
                     />
 
                 </div>

@@ -4,6 +4,9 @@ import { MdArrowOutward } from "../../assets/icon/index";
 //style
 import style from './style/projectCard.module.sass'
 
+//components
+import ShowMoreContainer from "./showMoreContainer";
+
 interface projectCardProps {
     image: string
     imagesName: string
@@ -12,7 +15,6 @@ interface projectCardProps {
     firstData: string
     lastData: string
 }
-
 
 const ProjectCard: React.FC<projectCardProps> = (props) => {
 
@@ -28,6 +30,11 @@ const ProjectCard: React.FC<projectCardProps> = (props) => {
     return (
         <div className={style.projectCard}>
             <div className={style.imagesCard}>
+
+                <a href={image} target={"_blank"}>
+                    <ShowMoreContainer />
+                </a>
+
                 <img
                     className={style.image}
                     src={image}

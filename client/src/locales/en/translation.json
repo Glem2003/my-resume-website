@@ -1,7 +1,18 @@
 {
     "footer": {
         "copyright": "Copyright © Glem 2024.All rights reserved.",
-        "version": "0.8.0"
+        "version": "version 0.8.5"
+    },
+    "header": {
+        "title": [
+            "header",
+            "title"
+        ],
+        "list": [
+            "About",
+            "Resume",
+            "Projects"
+        ]
     },
     "about": {
         "headerTitle": "Hi!",
@@ -34,17 +45,17 @@
         ],
         "experience": [
             {
-                "firstDate": "2021.09",
-                "title": "E-commerce Personnel",
+                "firstDate": "2022/03",
+                "title": "E-commerce Staff",
                 "content": [
-                    "Completed picking, packing, and shipping processes.",
+                    "Completed the selection, packaging, and shipping processes.",
                     "Handled customer service forms and reverse logistics."
                 ]
             },
             {
                 "firstDate": "2021/09",
                 "lastDate": "2022/01",
-                "title": "Administrative Assistant",
+                "title": "School Administrative Part-time Staff",
                 "content": [
                     "Assisted students with course-related issues.",
                     "Helped organize the office.",
@@ -55,7 +66,7 @@
             {
                 "firstDate": "2021/01",
                 "lastDate": "2021/02",
-                "title": "Winter Vacation Intern",
+                "title": "Winter Break Part-time Staff",
                 "content": [
                     "Received and inspected logistics goods, performed inventory counts.",
                     "Engaged in logistics goods reorganization and packaging.",
