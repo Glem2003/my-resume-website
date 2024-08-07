@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[246],{246:(e,s,t)=>{t.r(s),t.d(s,{default:()=>n});var a=t(579);const n=()=>(0,a.jsx)(a.Fragment,{children:"LoginPage"})}}]);
-//# sourceMappingURL=246.7a0d7b33.chunk.js.map
