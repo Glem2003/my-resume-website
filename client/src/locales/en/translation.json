@@ -1,7 +1,7 @@
 {
     "footer": {
         "copyright": "Copyright © Glem 2024.All rights reserved.",
-        "version": "version 0.8.5"
+        "version": "version 0.8.8"
     },
     "header": {
         "title": [
@@ -27,12 +27,12 @@
         "webTitle": "Resume",
         "list": [
             {
-                "key": "education",
-                "listText": "Education"
-            },
-            {
                 "key": "experience",
                 "listText": "Experience"
+            },
+            {
+                "key": "education",
+                "listText": "Education"
             },
             {
                 "key": "toolsOfChoice",

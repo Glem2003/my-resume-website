@@ -1,0 +1,31 @@
+@import '../../../assets/styles/variable.sass'
+
+.login
+    height: 100vh
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    gap: 50px
+
+    &__form
+        display: flex
+        flex-direction: column
+        gap: 15px
+        width: 30%
+
+    &__btnLogin
+        background-color: transparent
+        border: 3px solid $secondaryColor
+        border-radius: 8px
+        color: $secondaryColor
+        font-weight: 800px
+        font-size: 18px
+        display: grid
+        place-items: center
+        padding:  8px 20px
+        margin-top: 30px
+        transition: all .6s
+        &:hover
+            background-color: $secondaryColor
+            color: white

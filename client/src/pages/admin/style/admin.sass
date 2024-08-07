@@ -1,0 +1,41 @@
+@import '../../../assets/styles/variable.sass'
+
+.admin
+    border: 1px solid #000
+    height: 100vh
+
+    /* header layout*/
+    &__header
+        display: grid
+        line-height: 50px
+        grid-template-columns: max-content 2fr max-content
+        border-bottom: 1px solid gray
+        padding: 0 20px
+
+    &__list
+        display: flex
+        justify-content: center
+        gap: 30px
+
+    &__username
+        justify-self: end
+        position: relative
+        >p
+            cursor: pointer
+
+    &__functionItem
+        width: max-content
+        background-color: white
+        position: absolute
+        right: 0
+        margin-top: 3px
+        margin-right: -20px
+        padding: 0 6px
+        visibility: hidden
+        &--show
+            visibility: visible
+
+    /* main layout */
+    &__main
+        height: 90vh
+        background-color: $adminColor

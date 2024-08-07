@@ -1,0 +1,60 @@
+@import '../../../assets/styles/variable.sass'
+
+.languageSwitcher
+    @include width(40px)
+    border-radius: 20%
+    background-color: $tertiaryColor
+    position: relative
+    left: 40px
+    text-align: center
+    color: white
+    font-size: 20px
+    font-weight: 700
+    line-height: 40px
+    cursor: pointer
+
+    &--mobile
+        display: flex
+        align-items: center
+        gap: 15px
+
+    &__switch
+        @include width(60px, 30px)
+        position: relative
+        display: inline-block
+
+    &__input
+        @include width(0)
+        opacity: 0
+
+    &__slider
+        position: absolute
+        cursor: pointer
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        background-color: #ccc
+        transition: .4s
+        &::before
+            position: absolute
+            content: ""
+            height: 26px
+            width: 26px
+            left: 4px
+            bottom: 2px
+            background-color: white
+            transition: .4s
+
+    &__input:checked + &__slider
+        background-color: $tertiaryColor
+    &__input:focus + &__slider
+        box-shadow: 0 0 1px $tertiaryColor
+    &__input:checked + &__slider:before
+        transform: translateX(26px)
+
+    /* Rounded sliders */
+    &__slider.round
+        border-radius: 30px
+        &:before
+            border-radius: 50%

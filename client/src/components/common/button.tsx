@@ -5,28 +5,24 @@ interface buttonProps {
     name: string
     icon?: React.ReactNode
     disabled?: boolean
-    backgroundColor?: string
-    color?: string
     btnClick?: () => void
+    btnClassName?: string
 }
 
 const Button: React.FC<buttonProps> = (props) => {
 
-    const { name, icon, disabled, backgroundColor, color, btnClick } = props
+    const { name, icon, disabled, btnClick, btnClassName } = props
+
+    const className = btnClassName ? `${style.button} ${btnClassName}` : style.button
 
     return (
         <button
-            style={{
-                backgroundColor: backgroundColor,
-                color: color,
-                cursor: disabled ? 'not-allowed' : 'pointer'
-            }}
-            className={style.button}
+            className={className}
             disabled={disabled}
             onClick={btnClick}
         >
             <p>{name}</p>
-            <span className={style.icon}>{icon}</span>
+            {icon && <span className={style.icon}>{icon}</span>}
         </button>
     )
 }

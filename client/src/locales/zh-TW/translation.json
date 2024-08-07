@@ -1,7 +1,7 @@
 {
     "footer": {
         "copyright": "版權所有 © Glem 2024. 保留所有權利。",
-        "version": "版本 0.8.5"
+        "version": "版本 0.8.8"
     },
     "header": {
         "list": [
@@ -23,12 +23,12 @@
         "webTitle": "履歷",
         "list": [
             {
-                "key": "education",
-                "listText": "學歷"
-            },
-            {
                 "key": "experience",
                 "listText": "經歷"
+            },
+            {
+                "key": "education",
+                "listText": "學歷"
             },
             {
                 "key": "toolsOfChoice",

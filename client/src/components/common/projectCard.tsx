@@ -31,7 +31,7 @@ const ProjectCard: React.FC<projectCardProps> = (props) => {
         <div className={style.projectCard}>
             <div className={style.imagesCard}>
 
-                <a href={image} target={"_blank"}>
+                <a href={image} target="_blank" rel="noopener noreferrer">
                     <ShowMoreContainer />
                 </a>
 
