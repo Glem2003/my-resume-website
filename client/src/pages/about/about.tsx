@@ -31,16 +31,14 @@ const AboutPage = () => {
                         <Button
                             name={t('about.buttonItems.0')}
                             icon={<MdArrowOutward />}
-                            backgroundColor='black'
-                            color='white'
+                            btnClassName='about__btnEmail'
                         />
                     </a>
 
                     <Button
                         name={t('about.buttonItems.1')}
                         icon={<IoMdDownload />}
-                        backgroundColor='white'
-                        color='black'
+                        btnClassName='about__btnDownload'
                         disabled
                     />
 

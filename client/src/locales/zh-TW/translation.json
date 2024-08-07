@@ -23,12 +23,12 @@
         "webTitle": "履歷",
         "list": [
             {
-                "key": "education",
-                "listText": "學歷"
-            },
-            {
                 "key": "experience",
                 "listText": "經歷"
+            },
+            {
+                "key": "education",
+                "listText": "學歷"
             },
             {
                 "key": "toolsOfChoice",

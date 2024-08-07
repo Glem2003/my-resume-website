@@ -1,5 +1,5 @@
 import enTranslation from './en/translation.json';
-import zhTWTranslation from './ch_TW/translation.json';
+import zhTWTranslation from './zh-TW/translation.json';
 
 export {
     enTranslation as en,

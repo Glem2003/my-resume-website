@@ -2,9 +2,7 @@ import AppRoute from "./routes";
 
 const App = () => {
   return (
-    <div className="App">
-      <AppRoute />
-    </div>
+    <AppRoute />
   );
 }
 

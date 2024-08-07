@@ -27,12 +27,12 @@
         "webTitle": "Resume",
         "list": [
             {
-                "key": "education",
-                "listText": "Education"
-            },
-            {
                 "key": "experience",
                 "listText": "Experience"
+            },
+            {
+                "key": "education",
+                "listText": "Education"
             },
             {
                 "key": "toolsOfChoice",

@@ -9,7 +9,6 @@
 
     &__slide
         grid-area: slide
-        height: 400px
 
     &__main
         grid-area: main
@@ -17,3 +16,16 @@
         flex-direction: column
         gap: 30px
         padding-bottom: 30px
+
+@media screen and (max-width: 550px)
+    .resume
+        grid-template-columns: 1fr
+        grid-template-areas: 'head' 'slide' 'main'
+
+        &__slide
+            border-bottom: 1px solid #000
+            margin-bottom: 30px
+            >ul
+                display: grid
+                place-items: center
+                grid-template-columns: 1fr 1fr
