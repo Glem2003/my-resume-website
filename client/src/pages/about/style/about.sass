@@ -1,6 +1,5 @@
 .about
     width: 70%
-    height: 75vh
 
     &__buttonItems
         padding: 20px 0
@@ -15,3 +14,9 @@
         background-color: white
         color: black
         cursor: not-allowed
+
+    @media screen and (max-width: 550px)
+        width: 90%
+        &__buttonItems
+            flex-direction: column
+            align-items: start
