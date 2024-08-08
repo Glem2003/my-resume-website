@@ -9,8 +9,17 @@ body
     font-size: 16px
     height: 100vh
     background: linear-gradient(90deg, #f5f7f8 0%, #f4ce14 65%, #f5f7f8 100%)
-    
-    @media screen and (max-width: 768px)
+
+    @media screen and (min-width: 1920px)
+        font-size: 20px
+
+    @media screen and (max-width: 1920px) and (min-width: 1024px)
+        font-size: 18px
+
+    @media screen and (max-width: 1024px) and (min-width: 768px)
+        font-size: 16px
+
+    @media screen and (max-width: 768px) and (min-width: 425px)
         font-size: 14px
 
     @media screen and (max-width: 425px)
@@ -22,17 +31,17 @@ body
 
 //text styles
 h1
-    font-size: 3em
+    font-size: 3.5em
 h2
-    font-size: 2em
+    font-size: 2.2em
 h3
-    font-size: 1.5em
+    font-size: 1.8em
 h4
-    font-size: 1.2em
+    font-size: 1.5em
 h5
-    font-size: 1em
+    font-size: 1.2em
 h6
-    font-size: 0.9em
+    font-size: 1em
 
 //list styles
 li
