@@ -1,32 +1,14 @@
 const express = require('express');
-const sqlite3 = require('sqlite3').verbose();
-const bodyParser = require('body-parser');
-const cors = require('cors');
+const configureApp = require('./middleware/config'); // 引入配置模組
+const userRoutes = require('./router/users');
 
 const app = express();
-const users = new sqlite3.Database('./database/users.db');
-const projects = new sqlite3.Database('./database/projects.db');
 
-app.use(bodyParser.json());
-app.use(cors());
+configureApp(app); // 應用配置
 
-// 創建 users 資料表
-users.serialize(() => {
-    users.run(`CREATE TABLE IF NOT EXISTS users (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        name TEXT NOT NULL
-    )`);
-});
-
-// 創建 projects 資料表
-projects.serialize(() => {
-    projects.run(`CREATE TABLE IF NOT EXISTS projects (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        name TEXT NOT NULL
-    )`);
-});
+app.use('/', userRoutes);
 
 const PORT = 3000;
-app.listen(() => {
+app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
-});
+})
