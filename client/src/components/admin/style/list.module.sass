@@ -1,10 +1,19 @@
 @import '../../../assets/styles/variable.sass'
-    
+
 .list
-    margin-top: 3px
-    padding: 0 8px
+    display: flex
+    align-items: center
+    gap: 20px
+    padding: .8em
+    border-radius: 10px 0 0 10px
     cursor: pointer
-    border-radius: 6px 6px 0 0
+    font-size: 1em
+    transition: all .6s
+    >span
+        @include width(20px)
+        >svg
+            @include width(100%)
+
     &--active
-        background-color: $adminColor
-        color: white
+        background-color: $tertiaryColor
+        transform: scale(1.1)

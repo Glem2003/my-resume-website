@@ -140,5 +140,18 @@
     },
     "project": {
         "title": "Projects"
+    },
+    "admin": {
+        "logo": "BACKEND SYSTEM",
+        "version": "0.1",
+        "list": [
+            "Dashboard",
+            "CMS",
+            "Permissions",
+            "Web Settings",
+            "Settings",
+            "Logout"
+        ],
+        "welcomeMessage": "Welcome to the admin system.Please click on a list item"
     }
 }

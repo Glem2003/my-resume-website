@@ -10,11 +10,13 @@ import './style/languageSwitcher.sass';
 const LanguageSwitcher = () => {
 
     const { isMobile } = useIsMobile()
-
     const { i18n } = useTranslation()
+
+    const [isChecked, setIsChecked] = useState<boolean>(i18n.language === 'zh_TW');
 
     useEffect(() => {
         document.documentElement.lang = i18n.language;
+        setIsChecked(i18n.language === 'zh_TW');
     }, [i18n.language]);
 
     const changeLanguage = (lng: string) => {
@@ -37,18 +39,15 @@ const LanguageSwitcher = () => {
 
             {
                 isMobile && (
-                    <div className='languageSwitcher--mobile'>
-                        <p>EN</p>
-                        <label className="languageSwitcher__switch">
-                            <input
-                                className="languageSwitcher__input"
-                                type="checkbox"
-                                checked={i18n.language === 'zh_TW'}
-                                onChange={() => changeLanguage(i18n.language === 'en' ? 'zh_TW' : 'en')}
-                            />
-                            <span className="languageSwitcher__slider round"></span>
-                        </label>
-                        <p>中文</p>
+                    <div className="checkbox-wrapper-8">
+                        <input
+                            type="checkbox"
+                            id="cb3-8"
+                            className="tgl tgl-skewed"
+                            checked={isChecked} // 這裡使用 state 來控制勾選狀態
+                            onChange={() => changeLanguage(i18n.language === 'en' ? 'zh_TW' : 'en')}
+                        />
+                        <label htmlFor="cb3-8" data-tg-on="中文" data-tg-off="EN" className="tgl-btn" />
                     </div>
                 )
             }

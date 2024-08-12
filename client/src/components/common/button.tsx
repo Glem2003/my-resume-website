@@ -2,7 +2,7 @@
 import style from './style/button.module.sass'
 
 interface buttonProps {
-    name: string
+    name?: string
     icon?: React.ReactNode
     disabled?: boolean
     btnClick?: () => void
@@ -21,7 +21,7 @@ const Button: React.FC<buttonProps> = (props) => {
             disabled={disabled}
             onClick={btnClick}
         >
-            <p>{name}</p>
+            {name && <p>{name}</p>}
             {icon && <span className={style.icon}>{icon}</span>}
         </button>
     )

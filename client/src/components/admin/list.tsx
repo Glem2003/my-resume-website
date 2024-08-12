@@ -1,15 +1,25 @@
 import style from './style/list.module.sass'
 
 interface listProps {
-    text: string
+    text?: string
+    icon?: React.ReactNode
+    className?: string
+    listClick?: () => void
 }
 
 const List: React.FC<listProps> = (props) => {
 
-    const { text } = props
+    const { text, icon, className, listClick } = props
+
+    const listClassName = className ? `${style.list} ${style[`list${className}`]}` : style.list
 
     return (
-        <li className={`${style.list} ${style['list--active']}`}>{text}</li>
+        <li className={listClassName}
+            onClick={listClick}
+        >
+            <span>{icon}</span>
+            {text}
+        </li>
     )
 }
 

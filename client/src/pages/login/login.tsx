@@ -33,7 +33,7 @@ const LoginPage = () => {
 
     return (
         <main className="login">
-            <h1>ADMIN SYSTEM</h1>
+            <h1>BACKEND SYSTEM</h1>
             <form className='login__form'>
                 {inputConfig.map((input, index) => <LoginInput key={index} {...input} />)}
 

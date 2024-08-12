@@ -4,8 +4,16 @@ import { CgMenuHotdog } from "react-icons/cg";
 import { FaEye } from "react-icons/fa";
 import { BsPerson } from "react-icons/bs";
 import { GoLock } from "react-icons/go";
-import { AiOutlineLogin } from "react-icons/ai";
 import { AiOutlineCloseCircle } from "react-icons/ai";
+import { AiOutlineDashboard } from "react-icons/ai";
+import { IoSettingsOutline } from "react-icons/io5";
+import { GrSystem } from "react-icons/gr";
+import { IoMdArrowDropdown } from "react-icons/io";
+import { FaSignOutAlt } from "react-icons/fa";
+import { TbSettingsCog } from "react-icons/tb";
+import { AiOutlineMenuFold } from "react-icons/ai";
+import { AiOutlineMenuUnfold } from "react-icons/ai";
+import { GoPasskeyFill } from "react-icons/go";
 
 export {
     MdArrowOutward,
@@ -14,6 +22,14 @@ export {
     FaEye,
     BsPerson,
     GoLock,
-    AiOutlineLogin,
-    AiOutlineCloseCircle
+    AiOutlineCloseCircle,
+    AiOutlineDashboard,
+    IoSettingsOutline,
+    GrSystem,
+    IoMdArrowDropdown,
+    FaSignOutAlt,
+    TbSettingsCog,
+    AiOutlineMenuFold,
+    AiOutlineMenuUnfold,
+    GoPasskeyFill
 }
