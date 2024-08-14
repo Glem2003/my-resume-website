@@ -5,7 +5,7 @@ import './style/project.sass';
 import { useTranslation } from 'react-i18next';
 
 //content
-import { projectContent } from "../../content/index";
+import { projectContent } from "../../data/index";
 
 //component
 import { DefaultPages, Title, ProjectCard } from "../../components/index";

@@ -6,20 +6,24 @@ interface buttonProps {
     icon?: React.ReactNode
     disabled?: boolean
     btnClick?: () => void
-    btnClassName?: string
+    btnClassName?: string,
+    type?: 'button' | 'submit' | 'reset'
 }
 
 const Button: React.FC<buttonProps> = (props) => {
 
-    const { name, icon, disabled, btnClick, btnClassName } = props
+    const { name, icon, disabled, btnClick, btnClassName, type = 'button' } = props
 
-    const className = btnClassName ? `${style.button} ${btnClassName}` : style.button
+    const className = icon ? style.button : `${style.button} ${style['button--onlyName']}`
+
+    const btnClass = btnClassName || ''
 
     return (
         <button
-            className={className}
+            className={`${className} ${btnClass}`}
             disabled={disabled}
             onClick={btnClick}
+            type={type}
         >
             {name && <p>{name}</p>}
             {icon && <span className={style.icon}>{icon}</span>}

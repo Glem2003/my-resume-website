@@ -1,4 +1,3 @@
-//hook
 import { useNavigate } from 'react-router-dom';
 
 //style
@@ -8,23 +7,12 @@ import './style/login.sass'
 import { Button } from '../../components';
 import LoginInput from '../../components/login/input';
 
-//icon
-import { BsPerson, GoLock } from '../../assets/icon/index'
+//data
+import loginInputConfig from '../../data/login'
 
-const LoginPage = () => {
+const LoginPage: React.FC = () => {
 
-    const inputConfig = [
-        {
-            icon: <BsPerson />,
-            inputType: 'text',
-            placeholder: 'USERNAME'
-        },
-        {
-            icon: <GoLock />,
-            inputType: 'password',
-            placeholder: 'PASSWORD'
-        }
-    ]
+    const inputConfig = loginInputConfig
 
     const navigate = useNavigate();
     const handleGoToAdmin = () => {
@@ -37,7 +25,7 @@ const LoginPage = () => {
             <form className='login__form'>
                 {inputConfig.map((input, index) => <LoginInput key={index} {...input} />)}
 
-                <Button name='Login' btnClassName='login__btnLogin' btnClick={handleGoToAdmin}/>
+                <Button name='Login' btnClassName='login__btnLogin' btnClick={handleGoToAdmin} />
 
             </form>
         </main>

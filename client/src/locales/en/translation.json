@@ -152,6 +152,6 @@
             "Settings",
             "Logout"
         ],
-        "welcomeMessage": "Welcome to the admin system.Please click on a list item"
+        "welcomeMessage": "Welcome to the admin system."
     }
 }

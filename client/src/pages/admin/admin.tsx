@@ -31,7 +31,8 @@ import Permissions from "./permissions";
 import WebSetting from "./webSetting";
 import UserSetting from "./userSetting";
 
-const AdminPage = () => {
+const AdminPage: React.FC = () => {
+
 
     //header hook ---------------------------------
     const { isMenuActive, handleMenuClick } = useAdminMenuActive();
@@ -62,7 +63,7 @@ const AdminPage = () => {
             case 'permissions':
                 return <Permissions />;
             default:
-                return <h4>Welcome to the admin system.<br />Please click on a list item</h4>;
+                return <h4>Welcome to the admin system.</h4>;
         }
     };
 
@@ -71,7 +72,7 @@ const AdminPage = () => {
 
             <header className='admin__header'>
 
-                <h4>BACKEND SYSTEM<span className="admin__version">0.1</span></h4>
+                <h4 className="admin__logo">BACKEND SYSTEM<span className="admin__version">0.1</span></h4>
                 <div className='admin__state'>
                     <p className="admin__stateText" onClick={handleMenuClick}>
                         admin
