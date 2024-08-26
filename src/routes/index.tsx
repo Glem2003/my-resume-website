@@ -8,16 +8,12 @@ import { Loading, NotFound } from "../components/common"
 const About = lazy(() => import("../pages/about/about"))
 const Resume = lazy(() => import("../pages/resume/resume"))
 const Projects = lazy(() => import("../pages/projects/projects"))
-const Login = lazy(() => import("../pages/login/login"))
-const Admin = lazy(() => import("../pages/admin/admin"))
 
 //Routes Config
 const routes = [
     { path: '/', element: <About />, index: true },
     { path: '/Resume', element: <Resume /> },
     { path: '/Projects', element: <Projects /> },
-    { path: '/Login', element: <Login /> },
-    { path: '/Admin', element: <Admin /> },
     { path: "*", element: <NotFound /> }
 ]
 
