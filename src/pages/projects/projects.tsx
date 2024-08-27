@@ -22,11 +22,15 @@ const ProjectsPage = () => {
                     <Title title={t('project.title')} />
                 </section>
 
-                <main className="projectItems">
-                    {projectContent && projectContent.map((item, index) => {
-                        return <ProjectCard key={index}{...item} />
-                    })}
+
+                <main>
+                    <div className="projectItems">
+                        {projectContent && projectContent.map((item, index) => {
+                            return <ProjectCard key={index}{...item} />
+                        })}
+                    </div>
                 </main>
+
             </>
 
         </DefaultPages>

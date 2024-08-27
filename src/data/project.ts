@@ -8,7 +8,7 @@ const projectContent = [
         projectLink: 'https://github.com/Glem2003/Electronic-business-platform-Demo',
         projectName: 'EC Demo',
         firstData: '2024/03',
-        lastData: '2024/07'
+        lastData: '2024/07',
     },
     {
         image: TaskManger,
@@ -16,7 +16,7 @@ const projectContent = [
         projectLink: 'https://github.com/Glem2003/Task-Management',
         projectName: 'Task Management',
         firstData: '2024/07',
-        lastData: '2024/08'
+        lastData: '2024/08',
     }
 ]
 
